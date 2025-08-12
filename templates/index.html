@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Start Entropy Search</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body class="container mt-4">
+    <h1>Flash Entropy Search</h1>
+    <p>Upload your files and set parameters to begin a new search.</p>
+    <form action="/search" method="post" enctype="multipart/form-data" class="card p-4">
+        <div class="mb-3">
+            <label for="file_query" class="form-label">Query File</label>
+            <input type="file" class="form-control" id="file_query" name="file_query" required>
+        </div>
+        <div class="mb-3">
+            <label for="file_library" class="form-label">Library File</label>
+            <input type="file" class="form-control" id="file_library" name="file_library" required>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="ms1_tolerance_in_da" class="form-label">MS1 Tolerance (Da)</label>
+                <input type="number" step="0.001" class="form-control" id="ms1_tolerance_in_da" name="ms1_tolerance_in_da" value="0.01">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="ms2_tolerance_in_da" class="form-label">MS2 Tolerance (Da)</label>
+                <input type="number" step="0.001" class="form-control" id="ms2_tolerance_in_da" name="ms2_tolerance_in_da" value="0.02">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Start Search</button>
+    </form>
+</body>
+</html>

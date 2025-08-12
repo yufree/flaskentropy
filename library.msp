@@ -1,0 +1,10 @@
+Name: SAMPLEPEPTIDE/2
+MW: 1796.88
+Comment: Lib_ID=1 Precursor_type=M+2H Purity=1.0
+Precursor_mz: 899.45
+Num peaks: 5
+147.10 100
+260.20 55
+450.30 80
+700.40 60
+815.50 45
